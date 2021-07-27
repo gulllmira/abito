@@ -4,8 +4,8 @@
 ## Выполнила проект: Гульмира Мусина
 
 ### Технологии в проекте:
--HTML
--CSS
--JavaScript
--Normalize
--Fancybox
+HTML, 
+CSS,  
+JavaScript, 
+Normalize, 
+Fancybox
