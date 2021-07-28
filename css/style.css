@@ -3,10 +3,15 @@ body {
   font-size: 14px;
   color: #0a143a; /* цвет текста */
 }
-.header {
+.container {
   max-width: 1146px; /* максимальная ширина */
   margin: auto; /* автоматическое выравнивание по центру*/
+}
+
+.header {
   padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 12px;
 }
 /* меню навигации */
 .navbar {
@@ -74,4 +79,110 @@ body {
 }
 .search-button-text {
   margin-left: 5px;
+}
+.page-content {
+  display: grid; /* делит экран на блоки */
+  grid-template-columns: 9fr 3fr; /* задали два блока разного веса */
+  grid-column-gap: 30px;
+}
+.main .page-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #0a143a;
+}
+.card-image {
+  border-radius: 10px;
+  width: 264px;
+  height: 178px;
+  object-fit: cover;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  margin-bottom: 20px;
+}
+.card:not(:nth-child(3n)) {
+  margin-right: 20px;
+}
+.card-title {
+  font-size: 16px;
+  line-height: 19px;
+  color: #256eeb;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.like {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+}
+.card-link {
+  text-decoration: none;
+}
+.card-price {
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+  display: block;
+}
+.card-text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #c4c4c4;
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+.sidebar .page-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #0a143a;
+}
+.service {
+  margin-bottom: 25px;
+}
+.service-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #0a143a;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+.service_text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #0a143a;
+  max-width: 217px;
+}
+.footer-text {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  color: #c4c4c4;
+  margin-bottom: 5px;
+}
+.footer-menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 16px;
+}
+.footer-link {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 5px;
 }
